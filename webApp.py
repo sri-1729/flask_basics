@@ -12,5 +12,5 @@ def display():
 	roll = request.form['roll']
 	li = show.roll(roll)
 	
-	#dic = {'Name': li[0], 'Id' : li[1], 'Rank': li[2], 'CGPA' : li[3]}
+	#dic = {'Name': li[0], 'Rank': li[2], 'CGPA' : li[3]}
 	return render_template("result.html", li = li)
