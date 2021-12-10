@@ -10,7 +10,8 @@ def home():
 @x.route("/", methods=['POST'])
 def display():
 	roll = request.form['roll']
-	li = show.roll(roll)
+	li1 = show.roll(roll, 4)
+	li2 = show.roll(roll, 5)
 	
 	#dic = {'Name': li[0], 'Rank': li[2], 'CGPA' : li[3]}
-	return render_template("result.html", li = li)
+	return render_template("result.html", li1 = li1, li2=li2)
